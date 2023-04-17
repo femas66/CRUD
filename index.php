@@ -14,6 +14,7 @@ if (!isset($_SESSION['id'])) {
             font-weight: bold;
         }
     </style>
+    <link rel="icon" type="image/x-icon" href="img/logo.ico">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">

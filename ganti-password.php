@@ -136,8 +136,10 @@ $user = $q_user->fetch_assoc();
 
     <meta charset="utf-8">
     <title>FEMAS</title>
+    <link rel="icon" type="image/x-icon" href="img/logo.ico">
   </head>
   <body>
+    
     <script>
       
     </script>
@@ -163,7 +165,7 @@ $user = $q_user->fetch_assoc();
               }
             }
           </script>
-          
+          <link rel="icon" type="image/x-icon" href="img/logo.ico">
           <input type="password" required name="password" autofocus id="password" onkeyup="ceksama()">
           <span></span>
           <label><i class="fa-solid fa-key"></i> Password baru</label>

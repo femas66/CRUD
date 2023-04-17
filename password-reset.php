@@ -129,6 +129,7 @@ include 'koneksi.php';
       }
 
     </style>
+    <link rel="icon" type="image/x-icon" href="img/logo.ico">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
     <meta charset="utf-8">

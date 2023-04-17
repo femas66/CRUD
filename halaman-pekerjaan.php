@@ -16,7 +16,7 @@ if (!isset($_SESSION['id'])) {
     <meta name="description" content="">
     <meta name="author" content="">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-
+    <link rel="icon" type="image/x-icon" href="img/logo.ico">
     <title>CRUD</title>
 
     <!-- Custom fonts for this template-->
