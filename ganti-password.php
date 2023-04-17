@@ -13,6 +13,7 @@ $user = $q_user->fetch_assoc();
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <script src="https://kit.fontawesome.com/83685fdc33.js" crossorigin="anonymous"></script>
   <style>
       @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Poppins:wght@400;500;600&display=swap');
       *{
@@ -146,7 +147,7 @@ $user = $q_user->fetch_assoc();
         <div class="txt_field">
           <input type="password" required name="passwordlama" autofocus>
           <span></span>
-          <label>Password Lama</label>
+          <label><i class="fa-solid fa-key"></i> Password Lama</label>
         </div>
         <div class="txt_field">
           <script>
@@ -165,12 +166,12 @@ $user = $q_user->fetch_assoc();
           
           <input type="password" required name="password" autofocus id="password" onkeyup="ceksama()">
           <span></span>
-          <label>Password baru</label>
+          <label><i class="fa-solid fa-key"></i> Password baru</label>
         </div>
         <div class="txt_field">
           <input type="password" required name="password" autofocus id="confirmpassword" onkeyup="ceksama()">
           <span></span>
-          <label>Konfirmasi Password baru</label>
+          <label><i class="fa-solid fa-key"></i> Konfirmasi Password baru</label>
         </div>
         <button type="submit" name="submit" disabled id="btn">Reset</button>
         <div class="signup_link" style="color: red; visibility: hidden;" id="error">

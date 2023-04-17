@@ -127,6 +127,7 @@
     </style>
     <meta charset="utf-8">
     <title>FEMAS</title>
+    <script src="https://kit.fontawesome.com/83685fdc33.js" crossorigin="anonymous"></script>
   </head>
   <body>
   <script>
@@ -148,22 +149,22 @@
         <div class="txt_field">
           <input type="text" required name="name" autofocus>
           <span></span>
-          <label>Name</label>
+          <label><i class="fa-solid fa-user"></i> Name</label>
         </div>
         <div class="txt_field">
           <input type="text" required name="email">
           <span></span>
-          <label>Email</label>
+          <label><i class="fa-solid fa-envelope"></i> Email</label>
         </div>
         <div class="txt_field">
           <input type="password" required name="password" id="password" onkeyup="ceksama()">
           <span></span>
-          <label>Password</label>
+          <label><i class="fa-solid fa-lock"></i> Password</label>
         </div>
         <div class="txt_field">
           <input type="password" required id="confirmpassword" onkeyup="ceksama()">
           <span></span>
-          <label>Konfirmasi Password</label>
+          <label><i class="fa-solid fa-lock"></i> Konfirmasi Password</label>
         </div>
         <button type="submit" name="submit" id="btn" disabled>Daftar</button>
         <div class="signup_link" style="color:red; visibility: hidden; margin-top: -2px; padding-top: -10px; padding-bottom: -10px;" id="error">

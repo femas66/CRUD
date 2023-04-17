@@ -132,6 +132,7 @@ include 'koneksi.php';
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
     <meta charset="utf-8">
+    <script src="https://kit.fontawesome.com/83685fdc33.js" crossorigin="anonymous"></script>
     <title>FEMAS</title>
   </head>
   <body>
@@ -144,7 +145,7 @@ include 'koneksi.php';
         <div class="txt_field">
           <input type="text" required name="email" autofocus>
           <span></span>
-          <label>Email</label>
+          <label><i class="fa-solid fa-envelope"></i> Email</label>
         </div>
         <div class="txt_field">
           <script>
@@ -163,12 +164,12 @@ include 'koneksi.php';
           
           <input type="password" required name="password" autofocus id="password" onkeyup="ceksama()">
           <span></span>
-          <label>Password baru</label>
+          <label><i class="fa-solid fa-lock"></i> Password baru</label>
         </div>
         <div class="txt_field">
           <input type="password" required name="password" autofocus id="confirmpassword" onkeyup="ceksama()">
           <span></span>
-          <label>Konfirmasi Password baru</label>
+          <label><i class="fa-solid fa-lock"></i> Konfirmasi Password baru</label>
         </div>
         <button type="submit" name="submit" disabled id="btn">Reset</button>
         <div class="signup_link" style="color: red; visibility: hidden;" id="error">

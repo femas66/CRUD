@@ -127,6 +127,7 @@
     </style>
     <meta charset="utf-8">
     <title>FEMAS</title>
+    <script src="https://kit.fontawesome.com/83685fdc33.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <div class="center">
@@ -135,12 +136,12 @@
         <div class="txt_field">
           <input type="text" required name="email" autofocus>
           <span></span>
-          <label>Email</label>
+          <label><i class="fa-solid fa-envelope"></i> Email</label>
         </div>
         <div class="txt_field">
           <input type="password" required name="password">
           <span></span>
-          <label>Password</label>
+          <label><i class="fa-solid fa-lock"></i> Password</label>
         </div>
         <div class="pass"><a href='password-reset.php'>Forgot Password?</a></div>
         <button type="submit" name="submit">Login</button>

@@ -37,31 +37,29 @@ if (!isset($_SESSION['id'])) {
         <!-- Sidebar -->
         <ul class="navbar-nav sidebar sidebar-dark accordion" id="accordionSidebar" style="background: #37306B;">
             <hr class="sidebar-divider my-0">
-
-            <!-- Nav Item - Dashboard -->
             <li class="nav-item active">
                 <a class="nav-link" href="index.php">
-                
+                <i class="fa-solid fa-person"></i>
                     <span>Data Warga</span></a>
             </li>
             <li class="nav-item active">
                 <a class="nav-link" href="halaman-pekerjaan.php">
-                    
+                <i class="fa-solid fa-sack-dollar"></i>
                     <span>Data Pekerjaan</span></a>
             </li>
             <li class="nav-item active">
                 <a class="nav-link" href="halaman-hobi.php">
-                  
+                <i class="fa-solid fa-gamepad"></i>
                     <span>Data Hobi</span></a>
             </li>
             <li class="nav-item active">
                 <a class="nav-link" href="halaman-vaksin.php">
-                 
+                <i class="fa-solid fa-syringe"></i>
                     <span>Data Vaksin</span></a>
             </li>
             <li class="nav-item active">
                 <a class="nav-link" href="halaman-agama.php">
-                   
+                <i class="fa-solid fa-person-praying"></i>
                     <span>Data Agama</span></a>
             </li>
 
@@ -89,7 +87,7 @@ if (!isset($_SESSION['id'])) {
                         <li class="nav-item dropdown no-arrow">
                             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <span class="mr-2 d-none d-lg-inline text-gray-600 small"><?= $_SESSION['name'] ?></span>
+                                <span class="mr-2 d-none d-lg-inline text-gray-600 small"><i class="fa-solid fa-user"></i> <?= ucfirst($_SESSION['name']) ?></span>
                             
                             </a>
                             <!-- Dropdown - User Information -->
@@ -97,11 +95,11 @@ if (!isset($_SESSION['id'])) {
                                 aria-labelledby="userDropdown">
                                
                                 <a class="dropdown-item" href="ganti-password.php">
-                                    
+                                <i class="fa-solid fa-key"></i>
                                     Ganti Password
                                 </a>
                                 <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
-                                    
+                                <i class="fa-solid fa-right-from-bracket"></i>
                                     Logout
                                 </a>
                             </div>
@@ -121,7 +119,7 @@ $q = $koneksi->query("SELECT * FROM vaksin");
                     <!-- Page Heading -->
                     <div class="card shadow mb-4">
                         <div class="card-header py-3">
-                        <h6 class="m-0 font-weight-bold text-primary"><a href="tambah-vaksin.php" class="btn" style="background: #37306B; font-weight: bold; color:white; border-radius: 18px;">Tambah Data Vaksin</a></h6>
+                        <h6 class="m-0 font-weight-bold text-primary"><a href="tambah-vaksin.php" class="btn" style="background: #37306B; font-weight: bold; color:white; border-radius: 18px;"><i class="fa-solid fa-plus"></i> Tambah Data Vaksin</a></h6>
                         </div>
                         <div class="card-body">
                             <div class="table-responsive">
@@ -148,12 +146,14 @@ $q = $koneksi->query("SELECT * FROM vaksin");
                                                     <td><?= $data['nik'] ?></td>
                                                     <td><?= $data['usia'] ?></td>
                                                     <td><?= ($data['vaksin'] == 'Y') ? "Sudah" : "Belum" ?></td>
-                                                    <td><a href="edit-vaksin.php?id=<?= $data['id_vaksin'] ?>">Edit</a></td>
-                                                    <td><a href="?id_hapus=<?= $data['id_vaksin'] ?>">Hapus</a></td>
+                                                    <td><a href="edit-vaksin.php?id=<?= $data['id_vaksin'] ?>"><i class="fa-solid fa-pen-to-square"></i> Edit</a></td>
+                                                    <td><a href="?id_hapus=<?= $data['id_vaksin'] ?>"><i class="fa-solid fa-trash"></i> Hapus</a></td>
                                                     
                                                 </tr>
                                                 <?php
                                             }
+                                        } else {
+                                            echo "<tr><td colspan='6'><center>Tidak ada data</center></td></tr>";
                                         }
                                         ?>
                                     </tbody>
@@ -188,7 +188,7 @@ $q = $koneksi->query("SELECT * FROM vaksin");
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+                    <h5 class="modal-title" id="exampleModalLabel">Logout</h5>
                     <button class="close" type="button" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">×</span>
                     </button>
