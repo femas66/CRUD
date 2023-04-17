@@ -62,6 +62,9 @@ if (!isset($_SESSION['id'])) {
                 <i class="fa-solid fa-person-praying"></i>
                     <span>Data Agama</span></a>
             </li>
+            <div class="text-center d-none d-md-inline">
+                <button class="rounded-circle border-0" id="sidebarToggle"></button>
+            </div> 
         </ul>
         <!-- End of Sidebar -->
 
