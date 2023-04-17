@@ -16,7 +16,7 @@ if (!isset($_SESSION['id'])) {
     <meta name="description" content="">
     <meta name="author" content="">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <title>SB Admin 2 - Dashboard</title>
+    <title>CRUD</title>
 
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
